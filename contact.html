@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact | Peflo Logistics Limited</title>
+<meta name="description" content="Request a quote or ask a question. Contact Peflo Logistics Limited.">
+<link rel="icon" href="images/peflob.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<header class="site-header" id="site-header"></header>
+<main id="main">
+<section class="pagehead"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / Contact</nav>
+<h1>Request a quote</h1>
+<p class="lead">Tell us about your project. We will reply to arrange a site visit and prepare a written quote.</p>
+</div></section>
+<div class="hazard"></div>
+<section class="section"><div class="wrap cgrid">
+<div class="cinfo">
+<h2>Get in touch</h2>
+<p>Give us the location, the type of work and when you would like to start. The more you tell us, the faster we can reply.</p>
+<dl>
+<div><span class="badge" data-icon="mail"></span><span><dt>Email</dt><dd><a data-mail href="#"><span data-site="email"></span></a></dd></span></div>
+<div><span class="badge" data-icon="phone"></span><span><dt>Phone</dt><dd><a data-tel href="#"><span data-site="phone"></span></a></dd></span></div>
+<div><span class="badge" data-icon="pin"></span><span><dt>Office</dt><dd data-site="address"></dd></span></div>
+</dl>
+<div data-render="social"></div>
+</div>
+<form id="form" novalidate>
+<div class="row">
+<label>Full name<input id="name" name="name" autocomplete="name" required><span class="err" id="e-name"></span></label>
+<label>Email<input id="email" name="email" type="email" autocomplete="email" required><span class="err" id="e-email"></span></label>
+</div>
+<div class="row">
+<label>Phone (optional)<input id="phone" name="phone" type="tel" autocomplete="tel"></label>
+<label>Type of work<select id="topic" name="topic"></select></label>
+</div>
+<label>Your project<textarea id="msg" name="msg" required></textarea><span class="err" id="e-msg"></span></label>
+<button class="btn" type="submit">Send request</button>
+<p class="status" id="status" role="status" aria-live="polite"></p>
+</form>
+</div></section>
+</main>
+<footer class="site-footer" id="site-footer"></footer>
+<button class="top" id="top-btn" aria-label="Back to top"></button>
+<script src="js/script.js"></script>
+</body>
+</html>
